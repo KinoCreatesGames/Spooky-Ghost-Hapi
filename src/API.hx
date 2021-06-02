@@ -104,4 +104,63 @@ extern class API {
 	 */
 	@:native('get_anchor')
 	public static function getAnchor():Point;
+
+	/**
+	 * Returns the x component of the anchor point of the sprite.
+	 * @return Int
+	 */
+	@:native('get_anchor_x')
+	public static function getAnchorX():Int;
+
+	/**
+	 * Returns the y component of the anchor point of the sprite.
+	 * @return Int
+	 */
+	@:native('get_anchor_y')
+	public static function getAnchorY():Int;
+
+	/**
+	 * Returns the color of the sprite as a table with 
+	 * `r, g, b and a` fields.
+	 * @return ColorT
+	 */
+	@:native('get_color')
+	public static function getColor():ColorT;
+
+	/**
+	 * Returns the texture rectangle of the sprite as a table with 
+	 * `x, y, w, h` for the position, plus width and height.
+	 * @return RectT
+	 */
+	@:native('get_texrect')
+	public static function getTexRect():RectT;
+
+	/**
+	 * Returns the horizontal flipping flag of the sprite.
+	 * @return Bool
+	 */
+	@:native('get_flipped_x')
+	public static function getFlippedX():Bool;
+
+	/**
+	 * Returns the value of the vertical
+	 		* flipping flag of the sprite.
+	 * @return Bool
+	 */
+	@:native('get_flipped_y')
+	public static function getFlippedY():Bool;
+
+	/**
+	 * Returns the number of vertices of the sprite grid.
+	 * @return Int
+	 */
+	@:native('get_num_vertices')
+	public static function getNumVertices():Int;
+
+	/**
+	 * Returns all the vertices of the sprite grid as an array
+	 * of tables with `x, y, u , v`. 
+	 * @return Array<VertT>
+	 */
+	public static function getVertices():Array<VertT>;
 }

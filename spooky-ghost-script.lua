@@ -195,6 +195,7 @@ local Bool = _hx_e();
 local Class = _hx_e();
 local Enum = _hx_e();
 
+___API_API_Fields_ = _hx_e()
 local Array = _hx_e()
 ___Main_Main_Fields_ = _hx_e()
 local Math = _hx_e()
@@ -207,6 +208,8 @@ __haxe_iterators_ArrayKeyValueIterator = _hx_e()
 local _hx_bind, _hx_bit, _hx_staticToInstance, _hx_funcToField, _hx_maxn, _hx_print, _hx_apply_self, _hx_box_mr, _hx_bit_clamp, _hx_table, _hx_bit_raw
 local _hx_pcall_default = {};
 local _hx_pcall_break = {};
+
+___API_API_Fields_.new = {}
 
 Array.new = function() 
   local self = _hx_new(Array.prototype)
@@ -533,7 +536,8 @@ end
 
 ___Main_Main_Fields_.new = {}
 ___Main_Main_Fields_.main = function() 
-  __haxe_Log.trace(.get_canvas_width(), _hx_o({__fields__={fileName=true,lineNumber=true,className=true,methodName=true},fileName="src/Main.hx",lineNumber=4,className="_Main.Main_Fields_",methodName="main"}));
+  __haxe_Log.trace(.get_canvas_width(), _hx_o({__fields__={fileName=true,lineNumber=true,className=true,methodName=true},fileName="src/Main.hx",lineNumber=5,className="_Main.Main_Fields_",methodName="main"}));
+  __haxe_Log.trace(___API_API_Fields_.get_anchor_x(), _hx_o({__fields__={fileName=true,lineNumber=true,className=true,methodName=true},fileName="src/Main.hx",lineNumber=6,className="_Main.Main_Fields_",methodName="main"}));
 end
 
 Math.new = {}

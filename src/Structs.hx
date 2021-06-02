@@ -11,5 +11,20 @@ typedef PointF = {
 typedef ColorT = {
 	r:Int,
 	g:Int,
-	b:Int
+	b:Int,
+	a:Int
+}
+
+typedef RectT = {
+	x:Int,
+	y:Int,
+	w:Int,
+	h:Int
+}
+
+typedef VertT = {
+	x:Int,
+	y:Int,
+	u:Int,
+	v:Int
 }
