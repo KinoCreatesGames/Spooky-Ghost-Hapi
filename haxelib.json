@@ -1,0 +1,13 @@
+{
+  "name": "Spooky-Ghost-API",
+  "url" : "https://github.com/jasononeil/useless/",
+  "license": "MIT",
+  "tags": ["Haxe", "lua", "Spooky", "Ghost", "pixelart", "gamedev"],
+  "description": "An API conversion for the Spooky Ghost procedural animation tool",
+  "version": "0.0.1",
+  "classPath": "src/",
+  "releasenote": "Initial release for Spooky-Ghost",
+  "contributors": ["Kino"],
+  "dependencies": {
+  }
+}
