@@ -9,10 +9,10 @@ typedef PointF = {
 }
 
 typedef ColorT = {
-	r:Int,
-	g:Int,
-	b:Int,
-	a:Int
+	r:Float,
+	g:Float,
+	b:Float,
+	a:Float
 }
 
 typedef RectT = {
@@ -25,6 +25,11 @@ typedef RectT = {
 typedef VertT = {
 	x:Int,
 	y:Int,
+	u:Int,
+	v:Int
+}
+
+typedef UVT = {
 	u:Int,
 	v:Int
 }

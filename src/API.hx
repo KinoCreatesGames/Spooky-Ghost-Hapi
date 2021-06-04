@@ -163,4 +163,99 @@ extern class API {
 	 * @return Array<VertT>
 	 */
 	public static function getVertices():Array<VertT>;
+
+	/**
+	 * Returns all the vertices of the sprite grid as an array
+	 * of tables with x and y fields for the positions.
+	 * @return Arra<Point>
+	 */
+	@:native('get_vertices_xy')
+	public static function getVerticesXY():Array<Point>;
+
+	/**
+	 * Returns all the vertices of the sprite grid as an
+	 * array of tables with the u and v fields for
+	 * the texture coordinates.
+	 * @return Array<UVT>
+	 */
+	@:native('get_vertices_uv')
+	public static function getVerticesUV():Array<UVT>;
+
+	/**
+	 * Returns all the vertices of the sprite grid as an array
+	 * of x components of the position.
+	 */
+	@:native('get_vertices_x')
+	public static function getVerticesX():Array<Int>;
+
+	/**
+	 * Returns all the vertices of the sprite grid as an array
+	 * of y components of the position.
+	 */
+	@:native('get_vertices_y')
+	public static function getVerticesY():Array<Int>;
+
+	/**
+	 * Returns all the vertices of the sprite grid as
+	 * an array of u components of the texture coordinates.
+	 */
+	@:native('get_vertices_u')
+	public static function getVerticesU():Array<Int>;
+
+	/**
+	 * Returns all the vertices of the sprite grid as an
+	 * array of v components for the texture coordinates.
+	 */
+	@:native('get_verticies_v')
+	public static function getVerticesV():Array<Int>;
+
+	/**
+	 * Sets the position of the sprite in pixels through a table
+	 * with x, y fields.
+	 * @param point 
+	 */
+	@:native('set_position')
+	public static function setPosition(point:Point):Void;
+
+	/**
+	 * Sets the x component of the position of the sprite in pixels.
+	 * @param x 
+	 */
+	@:native('set_x')
+	public static function setX(x:Int):Void;
+
+	/**
+	 * Sets the y component of the position of the sprite in pixels.
+	 * @param y 
+	 */
+	@:native('set_y')
+	public static function setY(y:Int):Void;
+
+	/**
+	 * Sets the rotation of the sprite in degrees.
+	 * @param deg 
+	 */
+	@:native('set_rotation')
+	public static function setRotation(deg:Float):Void;
+
+	/**
+	 * Sets the scale of the sprite through at able with x and y fields.
+	 * @param scale 
+	 */
+	@:native('set_scale')
+	public static function setScale(scale:PointF):Void;
+
+	/**
+	 * Sets the x component of the scale.
+	 * @param x 
+	 */
+	@:native('set_scale_x')
+	public static function setScaleX(x:Float):Void;
+
+	/**
+	 * Sets the y component of the scale.
+	 * @param y 
+	 */
+	@:native('set_scale_y')
+	public static function setScaleY(y:Float):Void;
 }
