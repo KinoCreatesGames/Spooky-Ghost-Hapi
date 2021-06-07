@@ -258,4 +258,125 @@ extern class API {
 	 */
 	@:native('set_scale_y')
 	public static function setScaleY(y:Float):Void;
+
+	/**
+	 * Sets the anchor point of the sprite in pixels with one argument
+	 * as a table with x and y fields.
+	 * @param anchor 
+	 */
+	@:native('set_anchor')
+	public static function setAnchor(anchor:PointF):Void;
+
+	/**
+	 * Sets the x component of the anchor field.
+	 * @param x 
+	 */
+	@:native('set_anchor_x')
+	public static function setAnchorX(x:Float):Void;
+
+	/**
+	 * Sets the y component of the anchor field.
+	 * @param y 
+	 */
+	@:native('set_anchor_y')
+	public static function setAnchorY(y:Float):Void;
+
+	/**
+	 * Sets the color of the sprite through a table
+	 * with `r, g, b, a` fields with normalized values
+	 * for red, green, blue, and alpha.
+	 * @param color 
+	 */
+	public static function setColor(color:ColorT):Void;
+
+	/**
+	 * Sets the texture rectangle of the sprite through a table
+	 * with `x, y, w, h` fields for the x, y, width and height
+	 * of the rectangle.
+	 */
+	@:native('set_texrect')
+	public static function setTexRect(rect:RectT):Void;
+
+	/**
+	 * Sets the value of the horizontal flipping flag of the sprite.
+	 */
+	@:native('set_flipped_x')
+	public static function setFlippedX():Void;
+
+	/**
+	 * Sets the value of the vertical flipping flag of the sprite.
+	 */
+	@:native('set_flipped_y')
+	public static function setFlippedY():Void;
+
+	/**
+	 * Sets the blend preset value for the RGB channels.
+	 * Can be one of the members of the blending preset table.
+	 */
+	@:native('set_rgb_blending')
+	public static function setRGBBlending(blendingPreset:Int):Void;
+
+	/**
+	 * Sets the preset value for the alpha channels of the sprite.
+	 * Can be one of the members of the blending preset table.
+	 * 
+	 */
+	@:native('set_alpha_blending')
+	public static function setAlphaBlending(blendingPreset:Int):Void;
+
+	/**
+	 * Sets all the vertices of the sprite grid with one argument
+	 * array of vertices: `u, v, x, y` for the texture coordinates.
+	 * @param vertices 
+	 */
+	@:native('set_vertices')
+	public static function setVertices(vertices:Array<VertT>):Void;
+
+	/**
+	 * Sets all the vertices of the sprite grid `x, y` fields for the
+	 * texture coordinates.
+	 * @param vertices 
+	 */
+	@:native('set_vertices_xy')
+	public static function setVerticesXY(vertices:Array<Point>):Void;
+
+	/**
+	 * Sets all the vertices of the sprite grid `u, v` fields for the
+	 * texture coordinates.
+	 * @param vertices 
+	 */
+	@:native('set_vertices_uv')
+	public static function setVerticesUV(vertices:Array<Point>):Void;
+
+	/**
+	 * Sets all the vertices of the sprite grid `x` field for the
+	 * texture coordinates.
+	 * @param x 
+	 */
+	@:native('set_vertices_x')
+	public static function setVerticesX(x:Array<Int>):Void;
+
+	/**
+	 * Sets all the vertices of the sprite grid `y` field for the
+	 * texture coordinates.
+	 * @param y 
+	 */
+	@:native('set_vertices_y')
+	public static function setVerticesY(y:Array<Int>):Void;
+
+	/**
+	 * Sets all the vertices of the sprite grid `u` field for the
+	 * texture coordinates.
+	 * @param y 
+	 */
+	@:native('set_vertices_u')
+	public static function setVerticesU(u:Array<Int>):Void;
+
+	/**
+	 * Sets all the vertices of the sprite grid `v` field for the
+	 * texture coordinates.
+	 * @param y 
+	 */
+	@:native('set_vertices_v')
+	public static function setVerticesV(v:Array<Int>):Void;
 }
